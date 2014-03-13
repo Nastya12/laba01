@@ -41,12 +41,10 @@ class ContinuedFraction {
 		return valueFraction;
 	}
 	
-	@SuppressWarnings("null")
-	public ContinuedFraction addition (ContinuedFraction object1)
+	public ContinuedFraction addition (ContinuedFraction object)
 	{
 		double sum = 0;
-		ContinuedFraction object2 = new ContinuedFraction(arr);
-		sum=object1.calculationFraction()+object2.calculationFraction();
+		sum=this.calculationFraction()+object.calculationFraction();
 		ContinuedFraction result=new ContinuedFraction(sum);
 		return result;
 	}
@@ -54,8 +52,8 @@ class ContinuedFraction {
 	public ContinuedFraction subtraction (ContinuedFraction object)
 	{
 		double subt = 0;
+		subt=this.calculationFraction()-object.calculationFraction();
 		ContinuedFraction result=new ContinuedFraction(subt);
-		subt=result.calculationFraction()-object.calculationFraction();
 		return result;
 		
 	}
@@ -63,8 +61,8 @@ class ContinuedFraction {
 	public ContinuedFraction multiplication (ContinuedFraction object)
 	{
 		double mult = 0;
+		mult=this.calculationFraction()*object.calculationFraction();
 		ContinuedFraction result=new ContinuedFraction(mult);
-		mult=result.calculationFraction()*object.calculationFraction();
 		return result;
 		
 	}
@@ -72,8 +70,8 @@ class ContinuedFraction {
 	public ContinuedFraction division (ContinuedFraction object)
 	{
 		double div = 0;
+		div=this.calculationFraction()/object.calculationFraction();
 		ContinuedFraction result=new ContinuedFraction(div);
-		div=result.calculationFraction()/object.calculationFraction();
 		return result;
 		
 	}
