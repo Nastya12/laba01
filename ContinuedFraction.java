@@ -41,13 +41,14 @@ class ContinuedFraction {
 		return valueFraction;
 	}
 	
-	public ContinuedFraction addition (ContinuedFraction object)
+	@SuppressWarnings("null")
+	public ContinuedFraction addition (ContinuedFraction object1)
 	{
 		double sum = 0;
+		ContinuedFraction object2 = new ContinuedFraction(arr);
+		sum=object1.calculationFraction()+object2.calculationFraction();
 		ContinuedFraction result=new ContinuedFraction(sum);
-		sum=result.calculationFraction()+object.calculationFraction();
 		return result;
-		
 	}
 	
 	public ContinuedFraction subtraction (ContinuedFraction object)
